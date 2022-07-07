@@ -2,3 +2,28 @@
     height: 25rem;
     overflow: hidden;
 }
+.link {
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    padding: var(--lg) 0;
+    .container {
+        width: var(--container_md);
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        .link_box {
+            display: flex;
+            align-items: center;
+            gap: var(--s);
+            & img {
+                width: var(--lg);
+            }
+            & a {
+                color: inherit;
+            }
+            &:nth-child(4) img {
+                transform: scale(0.8);
+            }
+        }
+    }
+}

@@ -6,4 +6,5 @@
 
 @section('main-content')
 @dump($cards)
+@include('partials.main-links')
 @endsection

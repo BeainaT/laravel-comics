@@ -21,3 +21,8 @@ input::-webkit-input-placeholder {
 	color: var(--header_link);
     font-weight: bold;
 }
+h3 {
+    margin: var(--s) 0;
+    color: var(--secondary_color);
+    text-transform: uppercase;
+}

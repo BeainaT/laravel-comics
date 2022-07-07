@@ -55,6 +55,12 @@ input::-webkit-input-placeholder {
   font-weight: bold;
 }
 
+h3 {
+  margin: var(--s) 0;
+  color: var(--secondary_color);
+  text-transform: uppercase;
+}
+
 header {
   text-transform: uppercase;
 }
@@ -118,4 +124,66 @@ header .header_bottom span {
 .hero {
   height: 25rem;
   overflow: hidden;
+}
+
+.link {
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  padding: var(--lg) 0;
+}
+.link .container {
+  width: var(--container_md);
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.link .container .link_box {
+  display: flex;
+  align-items: center;
+  gap: var(--s);
+}
+.link .container .link_box img {
+  width: var(--lg);
+}
+.link .container .link_box a {
+  color: inherit;
+}
+.link .container .link_box:nth-child(4) img {
+  transform: scale(0.8);
+}
+
+footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--footer_link);
+}
+footer .footer_top {
+  width: var(--container_md);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_top .container_left {
+  width: var(--container_s);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--lg) 0;
+}
+footer .footer_top .container_left .adv {
+  padding-top: var(--md);
+}
+footer .footer_top .container_left .adv a {
+  color: var(--primary_color);
+}
+footer .footer_top a {
+  text-transform: capitalize;
+  color: inherit;
+}
+footer .footer_top .container_right {
+  width: var(--container_s);
+  background-image: url("../img/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
 }
