@@ -5,6 +5,6 @@
 @endsection
 
 @section('main-content')
-@dump($cards)
-@include('partials.main-links')
+    @include('partials.main-cards')
+    @include('partials.main-links')
 @endsection

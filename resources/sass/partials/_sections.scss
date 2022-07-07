@@ -5,7 +5,7 @@
 .link {
     background-color: var(--primary_color);
     color: var(--secondary_color);
-    padding: var(--lg) 0;
+    padding: var(--md) 0;
     .container {
         width: var(--container_md);
         margin: auto;
@@ -24,6 +24,46 @@
             &:nth-child(4) img {
                 transform: scale(0.8);
             }
+        }
+    }
+}
+.cards {
+    background-color: var(--main_bg_color);
+    padding-top: 2.5rem;
+    text-align: center;
+    .cards_container {
+        width: var(--container_md);
+        margin: auto;
+        position: relative;
+        .btn_current {
+            position: absolute;
+            top: -5.3125rem;
+            left: 0;
+            font-size: var(--md);
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            li {
+                width: calc(100% / 6 - 20px);
+            }
+            .card_box {
+                text-align: left;
+                max-width: 12.5rem;
+                .img_box {
+                    height: 11rem;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        button {
+            background-color: var(--primary_color);
+            margin: 1.25rem 0;
         }
     }
 }

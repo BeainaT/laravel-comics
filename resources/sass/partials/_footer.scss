@@ -16,6 +16,7 @@ footer {
             padding: var(--lg) 0;
             .adv {
                 padding-top: var(--md);
+                font-size: .875rem;
                 & a {
                     color: var(--primary_color)
                 }
@@ -24,6 +25,7 @@ footer {
         a {
             text-transform: capitalize;
             color: inherit;
+            font-size: .875rem;
         }
         .container_right {
             width: var(--container_s);
