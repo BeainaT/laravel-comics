@@ -1,1 +1,23 @@
 //typography
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+input {
+    border: none;
+    outline: none;
+    text-align: end;
+    padding: 0 var(--s);
+    width: var(--xlg);
+}
+input::-webkit-input-placeholder {
+	color: var(--header_link);
+    font-weight: bold;
+}
