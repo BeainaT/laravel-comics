@@ -4,6 +4,6 @@
     DC Comics
 @endsection
 
-@section('main-page')
-    
+@section('main-content')
+@dump($cards)
 @endsection

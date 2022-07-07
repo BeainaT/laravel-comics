@@ -100,6 +100,7 @@ header .header_top span:last-child::after {
 }
 header .header_bottom {
   color: var(--header_link);
+  padding: 0.1875rem 0;
 }
 header .header_bottom a {
   color: inherit;
@@ -112,4 +113,9 @@ header .header_bottom a:hover {
 }
 header .header_bottom span {
   border-bottom: 2px solid var(--primary_color);
+}
+
+.hero {
+  height: 25rem;
+  overflow: hidden;
 }
