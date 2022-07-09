@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $cards = config('comics');
     return view('home', compact('cards'));
-});
+})->name('home');
 
 //set parameter root
 Route::get('/card/{id}', function($id) {

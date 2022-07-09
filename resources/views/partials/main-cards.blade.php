@@ -2,11 +2,11 @@
     <div class="cards_container">
         <button class="btn_custom btn_current">current series</button>
             <ul>
-                @foreach ($cards as $card)
+                @foreach ($cards as $i => $card)
                 <li>
                     <div class="card_box">
                         <div class="img_box">
-                            <a href=""><img src="{{$card['thumb']}}" alt=""></a>
+                            <a href="{{route('card', ['id' => $i])}}"><img src="{{$card['thumb']}}" alt="{{$card['title']}}"></a>
                         </div>
                         <h5>{{$card['series']}}</h5>
                     </div>

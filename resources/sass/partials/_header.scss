@@ -7,10 +7,12 @@ header {
         align-items: center;
         nav {
             flex-grow: 1;
-            padding: 2.5rem;
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
+                li {
+                    padding: 2.5rem 0;
+                }
                 li:last-child::after {
                     content: '\25bc';
                     font-size: .75rem;
@@ -43,15 +45,10 @@ header {
     }
     .header_bottom {
         color: var(--header_link);
-        padding: .1875rem 0;
         a {
             color: inherit;
             padding: 2.5rem 0;
             font-weight: bold;
-            &:hover {
-                color: var(--primary_color);
-                border-bottom: 3px solid var(--primary_color);
-            }
         }
         span {
             border-bottom: 2px solid var(--primary_color);

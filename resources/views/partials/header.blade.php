@@ -2,7 +2,7 @@
     <div class="header_top">
         <div class="top container">
             <span>
-                <a href="http://">dc power℠ visa®</a>
+                <a href="">dc power℠ visa®</a>
             </span>
             <span>
                 additional dc sites
@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="">characters</a></li>
-                    <li><a href="">comics</a></li>
+                    <li class="{{Route::is('home', 'card') ? 'active' : ''}}"><a href="{{route('home')}}">comics</a></li>
                     <li><a href="">movies</a></li>
                     <li><a href="">tv</a></li>
                     <li><a href="">games</a></li>

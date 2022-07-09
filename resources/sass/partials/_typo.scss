@@ -39,3 +39,7 @@ h5 {
     border: none;
     font-family: inherit;
 }
+.active {
+    color: var(--primary_color);
+    border-bottom: 3px solid var(--primary_color);
+}

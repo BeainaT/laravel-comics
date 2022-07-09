@@ -76,6 +76,11 @@ h5 {
   font-family: inherit;
 }
 
+.active {
+  color: var(--primary_color);
+  border-bottom: 3px solid var(--primary_color);
+}
+
 header {
   text-transform: uppercase;
 }
@@ -87,11 +92,13 @@ header .container {
 }
 header .container nav {
   flex-grow: 1;
-  padding: 2.5rem;
 }
 header .container nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header .container nav ul li {
+  padding: 2.5rem 0;
 }
 header .container nav ul li:last-child::after {
   content: "\25BC";
@@ -121,16 +128,11 @@ header .header_top span:last-child::after {
 }
 header .header_bottom {
   color: var(--header_link);
-  padding: 0.1875rem 0;
 }
 header .header_bottom a {
   color: inherit;
   padding: 2.5rem 0;
   font-weight: bold;
-}
-header .header_bottom a:hover {
-  color: var(--primary_color);
-  border-bottom: 3px solid var(--primary_color);
 }
 header .header_bottom span {
   border-bottom: 2px solid var(--primary_color);
@@ -253,15 +255,4 @@ footer .footer_top .container_right {
   background-image: url("../img/dc-logo-bg.png");
   background-position: center;
   background-size: cover;
-}
-
-@media (max-width: 768px) {
-  .cards .cards_container ul li {
-    width: calc(20% - 20px);
-  }
-}
-@media (max-width: 576px) {
-  .cards .cards_container ul li {
-    width: calc(25% - 20px);
-  }
 }
