@@ -147,7 +147,7 @@ header .header_bottom span {
   padding: var(--md) 0;
 }
 .link .container {
-  width: var(--container_md);
+  max-width: var(--container_md);
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -173,7 +173,7 @@ header .header_bottom span {
   text-align: center;
 }
 .cards .cards_container {
-  width: var(--container_md);
+  max-width: var(--container_md);
   margin: auto;
   position: relative;
 }
@@ -206,6 +206,15 @@ header .header_bottom span {
 .cards .cards_container button {
   background-color: var(--primary_color);
   margin: 1.25rem 0;
+}
+
+.card_selected {
+  background-image: linear-gradient(var(--primary_color) 30%, var(--secondary_color) 30%);
+  padding-top: 30px;
+}
+.card_selected .selected_container {
+  max-width: var(--container_md);
+  margin: auto;
 }
 
 footer {
@@ -244,4 +253,15 @@ footer .footer_top .container_right {
   background-image: url("../img/dc-logo-bg.png");
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .cards .cards_container ul li {
+    width: calc(20% - 20px);
+  }
+}
+@media (max-width: 576px) {
+  .cards .cards_container ul li {
+    width: calc(25% - 20px);
+  }
 }

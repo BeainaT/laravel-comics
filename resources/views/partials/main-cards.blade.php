@@ -6,7 +6,7 @@
                 <li>
                     <div class="card_box">
                         <div class="img_box">
-                            <img src="{{$card['thumb']}}" alt="">
+                            <a href=""><img src="{{$card['thumb']}}" alt=""></a>
                         </div>
                         <h5>{{$card['series']}}</h5>
                     </div>

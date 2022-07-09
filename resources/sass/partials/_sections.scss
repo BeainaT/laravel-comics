@@ -7,7 +7,7 @@
     color: var(--secondary_color);
     padding: var(--md) 0;
     .container {
-        width: var(--container_md);
+        max-width: var(--container_md);
         margin: auto;
         display: flex;
         justify-content: space-around;
@@ -32,7 +32,7 @@
     padding-top: 2.5rem;
     text-align: center;
     .cards_container {
-        width: var(--container_md);
+        max-width: var(--container_md);
         margin: auto;
         position: relative;
         .btn_current {
@@ -65,5 +65,13 @@
             background-color: var(--primary_color);
             margin: 1.25rem 0;
         }
+    }
+}
+.card_selected {
+    background-image: linear-gradient(var(--primary_color) 30%, var(--secondary_color) 30%);
+    padding-top: 30px;
+    .selected_container {
+        max-width: var(--container_md);
+        margin: auto;
     }
 }
