@@ -68,10 +68,66 @@
     }
 }
 .card_selected {
-    background-image: linear-gradient(var(--primary_color) 30%, var(--secondary_color) 30%);
+    background-image: linear-gradient(var(--primary_color) 3.125rem, var(--secondary_color) 3.125rem);
     padding-top: 30px;
-    .selected_container {
-        max-width: var(--container_md);
-        margin: auto;
+    .desc_details {
+        background-color: var(--bg_descriprion);
+        border-top: 1px solid var(--description_row);
+        .details {
+            display: flex;
+            gap: var(--xlg);
+            h3 {
+                color: var(--description_primary);
+                text-transform: capitalize;
+                margin: 0;
+            }
+            .box_desc_left,
+            .box_desc_right {
+                display: flex;
+                flex-direction: column;
+                width: var(--container_sm);
+                .series span:last-child {
+                    color: var(--description_light);
+                    text-transform: uppercase;
+                }
+                & > *:not(h3) {
+                    border-bottom: 1px solid var(--description_row);
+                    padding: var(--s) 0;
+                    font-size: .875rem;
+                }
+                h3 {
+                    padding: var(--s-m) 0;
+                }
+                .row {
+                    display: flex;
+                    span:first-child {
+                        width: 50%;
+                    }
+                    
+                }
+                ul li {
+                    display: inline-block;
+                    a {
+                        color: var(--description_light);
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    .nav_card {
+        display: flex;
+        padding-top: var(--xlg);
+        .link_to {
+            border: 1px solid var(--description_row);
+            color: grey;
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% / 6);
+            padding: var(--s-m);
+            img {
+                height: var(--lg);
+            }
+        }
     }
 }
